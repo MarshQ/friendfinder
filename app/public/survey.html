@@ -1,0 +1,137 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Friend Finder Survey</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    </head>
+    <body>
+       
+        <h1>About you</h1>
+        <form id="user">
+            <label for="userName" class="alpha">Your Name: </label>
+            <input label= "Name: " type="text" id="userName"><br>
+            <label for="userPic" class="alpha">Link to a picture of yourself: </label>
+            <input label= "Link to a picture: " type="text" id="userPic">
+        </form>
+        
+       
+        <h2>Question 1</h2>
+        <h4> Whould you consider yourself more of an extrovert (5) or introvert (1)</h4>
+        <select id="limits1" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 2</h2>
+        <h4> You mind is always buzzing with unexplored ideas and plans</h4>
+        <select id="limits2" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 3</h2>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure </h4>
+        <select id="limits3" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 4</h2>
+        <h4> Generally Speaking, you rely more on your experience than your imagination</h4>
+        <select id="limits4" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 5</h2>
+        <h4>People can rarely upset you </h4>
+        <select id="limits5" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 6</h2>
+        <h4>You rarely do something just out of sheer curiousity </h4>
+        <select id="limits6" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 7</h2>
+        <h4>It is often difficult for you to relate to other </h4>
+        <select id="limits7" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 8</h2>
+        <h4> You rarely get carried away by fantasies and ideas</h4>
+        <select id="limits8" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 9</h2>
+        <h4> You feel more energetic after spending time with a group of people </h4>
+        <select id="limits9" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <h2>Question 10</h2>
+        <h4>You think that everyone's views should be respected regardless of whether they are supported by facts or not </h4>
+        <select id="limits0" class="" name="decision">
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two (Disagree)</option>
+            <option value="3">Three (Nuetral)</option>
+            <option value="4">Four (Agree)</option>
+            <option value="5">Five (Strongly Agree) </option>
+        </select>
+
+        <br>
+        <br>
+
+        <input id="search" class="search" type="submit" value="Find a new friend!">
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="friend_Here"></div>
+            </div>   
+        </div>
+    </body> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
+
+</DOCTYPE>
