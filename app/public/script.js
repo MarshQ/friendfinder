@@ -22,6 +22,11 @@ function find(event) {
         $("#limits9").val(),
         $("#limits0").val()
     ];
+    var newPerson = {
+        name: new_user,
+        pic: new_pic,
+        scores: user_picks
+    };
     console.log(user_picks);
     $.get("/api/friends", function (data){
         for (var i=0; i<data.length; i++) {
@@ -37,6 +42,9 @@ function find(event) {
         }
         offerFriend();
     })
+    $.post("/api/friends", newPerson, function(data){
+       console.log("Added to the list");
+    });
 }
 
 
